@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-05-22T13:11:08.184Z</updated>
+  <updated>2018-05-22T13:13:25.251Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,14 +21,14 @@
     <link href="http://yoursite.com/2018/05/22/github-page-and-hexo/"/>
     <id>http://yoursite.com/2018/05/22/github-page-and-hexo/</id>
     <published>2018-05-22T13:09:12.000Z</published>
-    <updated>2018-05-22T13:11:08.184Z</updated>
+    <updated>2018-05-22T13:13:25.251Z</updated>
     
     <summary type="html">
     
     </summary>
     
     
-      <category term="Github Page와 Hexo를 통해 30분만에 기술 블로그 만들기" scheme="http://yoursite.com/tags/Github-Page%EC%99%80-Hexo%EB%A5%BC-%ED%86%B5%ED%95%B4-30%EB%B6%84%EB%A7%8C%EC%97%90-%EA%B8%B0%EC%88%A0-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0/"/>
+      <category term="Ubuntu에서 Github Page와 Hexo를 통해 기술 블로그 만들기" scheme="http://yoursite.com/tags/Ubuntu%EC%97%90%EC%84%9C-Github-Page%EC%99%80-Hexo%EB%A5%BC-%ED%86%B5%ED%95%B4-%EA%B8%B0%EC%88%A0-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0/"/>
     
   </entry>
   
