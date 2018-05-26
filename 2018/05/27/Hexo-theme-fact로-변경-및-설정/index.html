@@ -3,20 +3,16 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hexo Theme 연결 | Carpe diem</title>
+  <title>Hexo theme fact로 변경 및 설정  | Carpe diem</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="12345OS : &amp;quot;ubuntu 16.04 LTS&amp;quot;편집기 : &amp;quot;Visual Studio Code&amp;quot;hexo 문서 url : https://hexo.io/ko/docs//themes.html Git page에 Hexo 연동 후에 Theme 연동 Theme Install연동1. Theme Clonehttps://hexo.io/">
-<meta name="keywords" content="Ubuntu,Github,Hexo">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Hexo Theme 연결">
-<meta property="og:url" content="https://byungjiklim.github.io/2018/05/26/Hexo-Theme-연결/index.html">
+  <meta property="og:type" content="article">
+<meta property="og:title" content="Hexo theme fact로 변경 및 설정 ">
+<meta property="og:url" content="https://byungjiklim.github.io/2018/05/27/Hexo-theme-fact로-변경-및-설정/index.html">
 <meta property="og:site_name" content="Carpe diem">
-<meta property="og:description" content="12345OS : &amp;quot;ubuntu 16.04 LTS&amp;quot;편집기 : &amp;quot;Visual Studio Code&amp;quot;hexo 문서 url : https://hexo.io/ko/docs//themes.html Git page에 Hexo 연동 후에 Theme 연동 Theme Install연동1. Theme Clonehttps://hexo.io/">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-05-26T15:23:04.687Z">
+<meta property="og:updated_time" content="2018-05-26T15:46:03.564Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo Theme 연결">
-<meta name="twitter:description" content="12345OS : &amp;quot;ubuntu 16.04 LTS&amp;quot;편집기 : &amp;quot;Visual Studio Code&amp;quot;hexo 문서 url : https://hexo.io/ko/docs//themes.html Git page에 Hexo 연동 후에 Theme 연동 Theme Install연동1. Theme Clonehttps://hexo.io/">
+<meta name="twitter:title" content="Hexo theme fact로 변경 및 설정 ">
   
   
 
@@ -90,7 +86,7 @@
     <script>document.getElementById("loading-bar").style.width="40%";</script>
     <main id="main">
       <div class="main-wrapper clearfix">
-        <article id="post-Hexo-Theme-연결"
+        <article id="post-Hexo-theme-fact로-변경-및-설정"
   class="article white-box article-type-post"
   itemscope itemprop="blogPost">
 
@@ -104,7 +100,7 @@
           <span class="grey">Posts</span>
           <span class="divider">/</span>
           
-          <a href="">Hexo Theme 연결</a>
+          <a href="">Hexo theme fact로 변경 및 설정 </a>
           
           <a class="toc-switch icon-btn"><span class="icon icon-list"></span></a>
         </div>
@@ -122,19 +118,19 @@
 
     <header class="article-header">
       <h1 class="article-title" itemprop="name">
-        Hexo Theme 연결
+        Hexo theme fact로 변경 및 설정 
       </h1>
       <div class="article-meta">
         <a class="article-author" href="">
           byungjikLim
         </a>
         <span class="divider">/</span>
-        <time class="article-time" datetime="2018-05-26T14:02:38.000Z" itemprop="datePublished">
-          May 26, 2018
+        <time class="article-time" datetime="2018-05-26T15:46:03.000Z" itemprop="datePublished">
+          May 27, 2018
         </time>
         
           <span class="divider">/</span>
-          <a class="category-link" href="/categories/blog/">blog</a>
+          <span>Uncategorized</span>
         
       </div>
     </header>
@@ -142,23 +138,12 @@
 
     <div class="article-entry" itemprop="articleBody">
       
-        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">OS : &quot;ubuntu 16.04 LTS&quot;</span><br><span class="line">편집기 : &quot;Visual Studio Code&quot;</span><br><span class="line">hexo 문서 url : https://hexo.io/ko/docs//themes.html</span><br><span class="line"></span><br><span class="line"> Git page에 Hexo 연동 후에 Theme 연동</span><br></pre></td></tr></table></figure>
-<h2 id="Theme-Install연동"><a href="#Theme-Install연동" class="headerlink" title="Theme Install연동"></a>Theme Install연동</h2><h3 id="1-Theme-Clone"><a href="#1-Theme-Clone" class="headerlink" title="1. Theme Clone"></a>1. Theme Clone</h3><p><a href="https://hexo.io/themes" target="_blank" rel="noopener">https://hexo.io/themes</a> 에는 이쁘고 괜찮은 Theme들이 많습니다. 그 중에 하나를 선택해서 clone 하면 됩니다.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 원하는 테마를 clone</span></span><br><span class="line">$ <span class="built_in">cd</span> &lt;path-to-hexo-folder&gt;/themes</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak.git tranquilpeak</span><br><span class="line">$ <span class="built_in">cd</span> tranquilpeak</span><br><span class="line">$ npm install -g bower grunt-cli</span><br><span class="line">$ npm install</span><br><span class="line">$ bower install</span><br><span class="line">$ grunt build</span><br></pre></td></tr></table></figure></p>
-<h3 id="2-Config파일을-수정해서-설치된-Theme-연결"><a href="#2-Config파일을-수정해서-설치된-Theme-연결" class="headerlink" title="2. Config파일을 수정해서 설치된 Theme 연결"></a>2. Config파일을 수정해서 설치된 Theme 연결</h3><p>blog/_config.yml 을 편집기로 연 후에 #Extensions으로 이동 후 아래와 같이 자신의 Theme 이름으로 편집을 해줘야 연결이 됩니다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Extensions</span><br><span class="line">## Plugins: https://hexo.io/plugins/</span><br><span class="line">## Themes: https://hexo.io/themes/</span><br><span class="line">theme: tranquilpeak</span><br></pre></td></tr></table></figure></p>
-<h3 id="3-Server에-수정된-파일-반영"><a href="#3-Server에-수정된-파일-반영" class="headerlink" title="3. Server에 수정된 파일 반영"></a>3. Server에 수정된 파일 반영</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo deploy --generate</span><br></pre></td></tr></table></figure>
-
+        
       
     </div>
 
 
     <section class="article-block-meta">
-      
-        <div class="article-tags">
-          <span class="icon icon-tag"></span>
-          <span class="text">
-            <a class="tag-link" href="/tags/Github/">Github</a>, <a class="tag-link" href="/tags/Hexo/">Hexo</a>, <a class="tag-link" href="/tags/Ubuntu/">Ubuntu</a>
-          </span>
-        </div>
       
       <div class="article-cc">
         <span class="icon icon-creative-commons"></span>
@@ -169,26 +154,14 @@
     
     <footer class="article-footer">
       
-      <div class="article-nav-link">
-          <span class="article-nav-caption">Previous article: </span>
-          <a href="/2018/05/27/Hexo-theme-fact로-변경-및-설정/"
-            id="article-nav-newer" class="article-nav-link-wrap">
-            <span class="article-nav-title">
-              
-                Hexo theme fact로 변경 및 설정 
-              
-            </span>
-          </a>
-      </div>
-      
       
       <div class="article-nav-link">
           <span class="article-nav-caption">Next article: </span>
-          <a href="/2018/05/22/github-page-and-hexo/"
+          <a href="/2018/05/26/Hexo-Theme-연결/"
             id="article-nav-newer" class="article-nav-link-wrap">
             <span class="article-nav-title">
               
-                Ubuntu에서 Github Page와 Hexo을 연동 및 설정
+                Hexo Theme 연결
               
             </span>
           </a>
