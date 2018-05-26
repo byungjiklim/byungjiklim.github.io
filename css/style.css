@@ -1694,7 +1694,7 @@ pre code {
  */
 .site-sidebar {
   position: relative;
-  float: right;
+  float: left;
   width: 260px;
   padding: 0px;
   margin: 0px;
