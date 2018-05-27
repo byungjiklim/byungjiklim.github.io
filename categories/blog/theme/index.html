@@ -118,7 +118,7 @@
   <div class="post-title">
     <h3>
       
-      <a href="/2018/05/27/Hexo-theme-fact로-변경-및-설정/">Hexo theme fact로 변경 및 설정 </a>
+      <a href="/2018/05/27/Hexo-theme-fact로-변경-및-설정/">Hexo &#34;fact&#34;로 Theme 연결</a>
       
     </h3>
   </div>
@@ -164,7 +164,7 @@
   <div class="post-title">
     <h3>
       
-      <a href="/2018/05/26/Hexo-Theme-연결/">Hexo Theme 연결</a>
+      <a href="/2018/05/26/Hexo-Theme-연결/">Hexo &#34;tranquilpeak&#34;로 Theme 연결</a>
       
     </h3>
   </div>
@@ -184,7 +184,7 @@
   <div class="post-excerpt">
     
       <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">OS : &quot;ubuntu 16.04 LTS&quot;</span><br><span class="line">편집기 : &quot;Visual Studio Code&quot;</span><br><span class="line">hexo 문서 url : https://hexo.io/ko/docs//themes.html</span><br><span class="line"></span><br><span class="line"> Git page에 Hexo 연동 후에 Theme 연동</span><br></pre></td></tr></table></figure>
-<h2 id="Theme-Install연동"><a href="#Theme-Install연동" class="headerlink" title="Theme Install연동"></a>Theme Install연동</h2><h3 id="1-Theme-Clone"><a href="#1-Theme-Clone" class="headerlink" title="1. Theme Clone"></a>1. Theme Clone</h3><p><a href="https://hexo.io/themes" target="_blank" rel="noopener">https://hexo.io/themes</a> 에는 이쁘고 괜찮은 Theme들이 많습니다. 그 중에 하나를 선택해서 clone 하면 됩니다.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 원하는 테마를 clone</span></span><br><span class="line">$ <span class="built_in">cd</span> &lt;path-to-hexo-folder&gt;/themes</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak.git tranquilpeak</span><br><span class="line">$ <span class="built_in">cd</span> tranquilpeak</span><br><span class="line">$ npm install -g bower grunt-cli</span><br><span class="line">$ npm install</span><br><span class="line">$ bower install</span><br><span class="line">$ grunt build</span><br></pre></td></tr></table></figure></p>
+<h2 id="Theme-Install연동"><a href="#Theme-Install연동" class="headerlink" title="Theme Install연동"></a>Theme Install연동</h2><h3 id="1-Theme-Clone"><a href="#1-Theme-Clone" class="headerlink" title="1. Theme Clone"></a>1. Theme Clone</h3><p><a href="https://hexo.io/themes" target="_blank" rel="noopener">https://hexo.io/themes</a> 에는 이쁘고 괜찮은 Theme들이 많습니다. 그 중에 하나를 선택해서 clone 하면 됩니다.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 원하는 테마를 clone</span></span><br><span class="line">$ <span class="built_in">cd</span> &lt;path-to-hexo-folder&gt;/themes</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak.git cccc</span><br><span class="line">$ <span class="built_in">cd</span> tranquilpeak</span><br><span class="line">$ npm install -g bower grunt-cli</span><br><span class="line">$ npm install</span><br><span class="line">$ bower install</span><br><span class="line">$ grunt build</span><br></pre></td></tr></table></figure></p>
 <h3 id="2-Config파일을-수정해서-설치된-Theme-연결"><a href="#2-Config파일을-수정해서-설치된-Theme-연결" class="headerlink" title="2. Config파일을 수정해서 설치된 Theme 연결"></a>2. Config파일을 수정해서 설치된 Theme 연결</h3><p>blog/_config.yml 을 편집기로 연 후에 #Extensions으로 이동 후 아래와 같이 자신의 Theme 이름으로 편집을 해줘야 연결이 됩니다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Extensions</span><br><span class="line">## Plugins: https://hexo.io/plugins/</span><br><span class="line">## Themes: https://hexo.io/themes/</span><br><span class="line">theme: tranquilpeak</span><br></pre></td></tr></table></figure></p>
 <h3 id="3-Server에-수정된-파일-반영"><a href="#3-Server에-수정된-파일-반영" class="headerlink" title="3. Server에 수정된 파일 반영"></a>3. Server에 수정된 파일 반영</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo deploy --generate</span><br></pre></td></tr></table></figure>
 
@@ -247,11 +247,11 @@
       <ul>
         
           <li>
-            <a href="/2018/05/27/Hexo-theme-fact로-변경-및-설정/">Hexo theme fact로 변경 및 설정 </a>
+            <a href="/2018/05/27/Hexo-theme-fact로-변경-및-설정/">Hexo &#34;fact&#34;로 Theme 연결</a>
           </li>
         
           <li>
-            <a href="/2018/05/26/Hexo-Theme-연결/">Hexo Theme 연결</a>
+            <a href="/2018/05/26/Hexo-Theme-연결/">Hexo &#34;tranquilpeak&#34;로 Theme 연결</a>
           </li>
         
           <li>
