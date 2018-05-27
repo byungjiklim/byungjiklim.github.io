@@ -1,13 +1,22 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    
 <head>
-  <meta charset="utf-8">
-  
-  <title>Hexo &#34;fact&#34;로 Theme 연결 | Carpe diem</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="12345OS : &amp;quot;ubuntu 16.04 LTS&amp;quot;편집기 : &amp;quot;Visual Studio Code&amp;quot;hexo 문서 url : https://hexo.io/ko/docs//themes.html Git page에 Hexo 연동 후에 Theme 연동 Theme Install연동1. Theme Clone123# 원하는 테마를 clo">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Carpe diem">
+    <title>Hexo &#34;fact&#34;로 Theme 연결 - Carpe diem</title>
+    <meta name="author" content="byungjikLim">
+    
+    
+    
+        <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
+    
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"byungjikLim","sameAs":["https://github.com/byungjiklim"]},"articleBody":"12345OS : &quot;ubuntu 16.04 LTS&quot;편집기 : &quot;Visual Studio Code&quot;hexo 문서 url : https://hexo.io/ko/docs//themes.html Git page에 Hexo 연동 후에 Theme 연동\nTheme Install연동1. Theme Clone123# 원하는 테마를 clone$ cd &lt;path-to-hexo-folder&gt;/themes$ git clone https://github.com/artchen/hexo-theme-fact.git fact\n2. hexo 수정해서 설치된 Theme 연결blog/_config.yml($(path-to-hexo-folder)/_config.yml)을 편집기로 연 후에 #Extensions으로 이동 후 아래와 같이 clone한 Theme 이름으로 편집을 해줘야 연결이 됩니다.1234# Extensions## Plugins: https://hexo.io/plugins/## Themes: https://hexo.io/themes/theme: fact\n3. Theme Config파일을 수정을 통해서 커스텀마이징1234567891. fact/_config.yml 수정use url, not username 항목으로 이동해서 email, github, twitter, google 리스트에 자신의 정보를 넣어준다.2. 프로필 사진 변경fact/source/css/images/avatar.png 에 연결된 이미지가 있습니다. 자신의 프로필사진을 저 파일로 대체를 해도 되고 아니면 검색을 해서 원하는 프로필사진 파일명으로 변경 하면 됩니다.3. bio.ejs 편집&quot;&lt;!-- About Me --&gt;&quot; 항목에 &lt;div class=&quot;info&quot;&gt; 아래에 href을 자신의 github나 자신의 블로그로 연결 해 줍니다.\n4. Server에 수정된 파일 반영1$ hexo clean &amp;&amp; hexo deploy --generate\n변경된 theme\n","dateCreated":"2018-05-27T00:46:03+09:00","dateModified":"2018-05-27T13:17:32+09:00","datePublished":"2018-05-27T00:46:03+09:00","description":"","headline":"Hexo \"fact\"로 Theme 연결","image":[],"mainEntityOfPage":{"@type":"WebPage","@id":"https://byungjiklim.github.io/2018/05/27/Hexo-theme-fact로-변경-및-설정/"},"publisher":{"@type":"Organization","name":"byungjikLim","sameAs":["https://github.com/byungjiklim"]},"url":"https://byungjiklim.github.io/2018/05/27/Hexo-theme-fact로-변경-및-설정/","keywords":"Ubuntu, Github, Hexo, fact, theme"}</script>
+    <meta name="description" content="12345OS : &amp;quot;ubuntu 16.04 LTS&amp;quot;편집기 : &amp;quot;Visual Studio Code&amp;quot;hexo 문서 url : https://hexo.io/ko/docs//themes.html Git page에 Hexo 연동 후에 Theme 연동 Theme Install연동1. Theme Clone123# 원하는 테마를 clo">
 <meta name="keywords" content="Ubuntu,Github,Hexo,fact,theme">
-<meta property="og:type" content="article">
+<meta property="og:type" content="blog">
 <meta property="og:title" content="Hexo &quot;fact&quot;로 Theme 연결">
 <meta property="og:url" content="https://byungjiklim.github.io/2018/05/27/Hexo-theme-fact로-변경-및-설정/index.html">
 <meta property="og:site_name" content="Carpe diem">
@@ -19,284 +28,462 @@
 <meta name="twitter:title" content="Hexo &quot;fact&quot;로 Theme 연결">
 <meta name="twitter:description" content="12345OS : &amp;quot;ubuntu 16.04 LTS&amp;quot;편집기 : &amp;quot;Visual Studio Code&amp;quot;hexo 문서 url : https://hexo.io/ko/docs//themes.html Git page에 Hexo 연동 후에 Theme 연동 Theme Install연동1. Theme Clone123# 원하는 테마를 clo">
 <meta name="twitter:image" content="https://byungjiklim.github.io/css/images/hexo_fact_theme.png">
-  
-  
+    
+    
+        
+    
+    
+        <meta property="og:image" content="https://www.gravatar.com/avatar/b6300c8d790fcd04deda629d850670c9?s=640"/>
+    
+    
+    
+    
+    <!--STYLES-->
+    <link rel="stylesheet" href="/assets/css/font-awesome.css">
+    <link rel="stylesheet" href="/assets/css/jquery.fancybox.css">
+    <link rel="stylesheet" href="/assets/css/thumbs.css">
+    <link rel="stylesheet" href="/assets/css/tranquilpeak.css">
+    <!--STYLES END-->
+    
 
-  <link rel="stylesheet" href="/css/icomoon/style.css">
-  <link rel="stylesheet" href="/css/style.css">
-
-  <script src="https://use.typekit.net/eyf3hir.js"></script>
-  <script>try{Typekit.load({ async: false });}catch(e){}</script>
+    
 </head>
 
-<body>
-  <div class="site-wrapper">
-    <div id="loading-bar-wrapper">
-  <div id="loading-bar"></div>
-</div>
-<script>document.getElementById("loading-bar").style.width="20%";</script>
+    <body>
+        <div id="blog">
+            <!-- Define author's picture -->
 
 
-<header id="header" class="site-header clearfix">
+    
+        
+    
 
-  <div class="header-bar">
-    <button class="site-nav-switch svg-anime-icon icon-menu-cross">
-      <span>toggle menu</span>
-    </button>
-    <a class="site-title" href="/">
-      <span class="site-brand light">Carpe</span>
-      <span class="site-brand blue">Diem</span>
-    </a>
-    <button type="button" class="site-bio-switch">
-      <span class="icon icon-v-card"></span>
-    </button>
-  </div>
-
-  <nav class="site-menu">
-  <ul>
+<header id="header" data-behavior="4">
+    <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+    <div class="header-title">
+        <a class="header-title-link" href="/ ">Carpe diem</a>
+    </div>
     
-    <li>
-      <a href="/" class="artifact_btn sm teal">
-        <span class="icon icon-line-home"></span>
-        <span class="name">Home</span>
-      </a>
-    </li>
+        
+            <a  class="header-right-picture "
+                href="#about">
+        
+        
+            <img class="header-picture" src="https://www.gravatar.com/avatar/b6300c8d790fcd04deda629d850670c9?s=90" alt="Author&#39;s picture"/>
+        
+        </a>
     
-    <li>
-      <a href="/atom.xml" class="artifact_btn sm orange">
-        <span class="icon icon-feed"></span>
-        <span class="name">Subscribe</span>
-      </a>
-    </li>
-    
-    <li>
-      <a href="/tags" class="artifact_btn sm red">
-        <span class="icon icon-tag"></span>
-        <span class="name">All Tags</span>
-      </a>
-    </li>
-    
-    <li>
-      <a href="/archives" class="artifact_btn sm blue">
-        <span class="icon icon-box"></span>
-        <span class="name">Archives</span>
-      </a>
-    </li>
-    
-    <li>
-      <a href="/all-category" class="artifact_btn sm blue">
-        <span class="icon icon-box"></span>
-        <span class="name">Category</span>
-      </a>
-    </li>
-    
-  </ul>
-</nav>
-
-
 </header>
 
-    <script>document.getElementById("loading-bar").style.width="40%";</script>
-    <main id="main">
-      <div class="main-wrapper clearfix">
-        <article id="post-Hexo-theme-fact로-변경-및-설정"
-  class="article white-box article-type-post"
-  itemscope itemprop="blogPost">
+            <!-- Define author's picture -->
 
-  <div class="article-navigation-header">
-    <div class="navigation">
-      <div class="navigation-content">
-        <div class="navigation-content-wrapper">
-          <a href="/">Home</a>
-          <span class="divider">/</span>
-          
-          <span class="grey">Posts</span>
-          <span class="divider">/</span>
-          
-          <a href="">Hexo &#34;fact&#34;로 Theme 연결</a>
-          
-          <a class="toc-switch icon-btn"><span class="icon icon-list"></span></a>
-        </div>
-        <div id="article-toc" class="article-toc">
-          <div class="article-toc-title">Table of contents </div>
-          
-            <div class="no-index">No Index</div>
-          
-        </div>
-      </div>
+
+    
+
+<nav id="sidebar" data-behavior="4">
+    <div class="sidebar-container">
+        
+            <div class="sidebar-profile">
+                <a href="/#about">
+                    <img class="sidebar-profile-picture" src="https://www.gravatar.com/avatar/b6300c8d790fcd04deda629d850670c9?s=110" alt="Author&#39;s picture"/>
+                </a>
+                <h4 class="sidebar-profile-name">byungjikLim</h4>
+                
+                    <h5 class="sidebar-profile-bio"><p>^<strong><strong><strong><strong><strong>____</strong></strong></strong></strong></strong>^</p>
+</h5>
+                
+            </div>
+        
+        
+            <ul class="sidebar-buttons">
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="/ "
+                            
+                            title="Home"
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-home" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Home</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="/all-categories"
+                            
+                            title="Categories"
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-bookmark" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Categories</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="/all-tags"
+                            
+                            title="Tags"
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-tags" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Tags</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="/all-archives"
+                            
+                            title="Archives"
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-archive" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Archives</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="#about"
+                            
+                            title="About"
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-question" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">About</span>
+                    </a>
+            </li>
+            
+        </ul>
+        
+            <ul class="sidebar-buttons">
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link " href="https://github.com/byungjiklim" target="_blank" rel="noopener" title="GitHub">
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-github" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">GitHub</span>
+                    </a>
+            </li>
+            
+        </ul>
+        
+            <ul class="sidebar-buttons">
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="/atom.xml"
+                            
+                            title="RSS"
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-rss" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">RSS</span>
+                    </a>
+            </li>
+            
+        </ul>
+        
     </div>
-  </div>
+</nav>
 
-  <div class="article-inner">
-
-    <header class="article-header">
-      <h1 class="article-title" itemprop="name">
-        Hexo &#34;fact&#34;로 Theme 연결
-      </h1>
-      <div class="article-meta">
-        <a class="article-author" href="">
-          byungjikLim
-        </a>
-        <span class="divider">/</span>
-        <time class="article-time" datetime="2018-05-26T15:46:03.000Z" itemprop="datePublished">
-          May 27, 2018
-        </time>
+            
+            <div id="main" data-behavior="4"
+                 class="
+                        hasCoverMetaIn
+                        ">
+                
+<article class="post">
+    
+    
+        <div class="post-header main-content-wrap text-left">
+    
+        <h1 class="post-title">
+            Hexo &#34;fact&#34;로 Theme 연결
+        </h1>
+    
+    
+        <div class="post-meta">
+    <time datetime="2018-05-27T00:46:03+09:00">
+	
+		    May 27, 2018
+    	
+    </time>
+    
+        <span>in </span>
         
-          <span class="divider">/</span>
-          <a class="category-link" href="/categories/blog/">blog</a>, <a class="category-link" href="/categories/blog/theme/">theme</a>
-        
-      </div>
-    </header>
+    <a class="category-link" href="/categories/blog/">blog</a>, <a class="category-link" href="/categories/blog/theme/">theme</a>
 
 
-    <div class="article-entry" itemprop="articleBody">
-      
-        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">OS : &quot;ubuntu 16.04 LTS&quot;</span><br><span class="line">편집기 : &quot;Visual Studio Code&quot;</span><br><span class="line">hexo 문서 url : https://hexo.io/ko/docs//themes.html</span><br><span class="line"></span><br><span class="line"> Git page에 Hexo 연동 후에 Theme 연동</span><br></pre></td></tr></table></figure>
+    
+</div>
+
+    
+</div>
+
+    
+    <div class="post-content markdown">
+        <div class="main-content-wrap">
+            <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">OS : &quot;ubuntu 16.04 LTS&quot;</span><br><span class="line">편집기 : &quot;Visual Studio Code&quot;</span><br><span class="line">hexo 문서 url : https://hexo.io/ko/docs//themes.html</span><br><span class="line"></span><br><span class="line"> Git page에 Hexo 연동 후에 Theme 연동</span><br></pre></td></tr></table></figure>
 <h2 id="Theme-Install연동"><a href="#Theme-Install연동" class="headerlink" title="Theme Install연동"></a>Theme Install연동</h2><h3 id="1-Theme-Clone"><a href="#1-Theme-Clone" class="headerlink" title="1. Theme Clone"></a>1. Theme Clone</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 원하는 테마를 clone</span></span><br><span class="line">$ <span class="built_in">cd</span> &lt;path-to-hexo-folder&gt;/themes</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/artchen/hexo-theme-fact.git fact</span><br></pre></td></tr></table></figure>
 <h3 id="2-hexo-수정해서-설치된-Theme-연결"><a href="#2-hexo-수정해서-설치된-Theme-연결" class="headerlink" title="2. hexo 수정해서 설치된 Theme 연결"></a>2. hexo 수정해서 설치된 Theme 연결</h3><p>blog/_config.yml($(path-to-hexo-folder)/_config.yml)을 편집기로 연 후에 #Extensions으로 이동 후 아래와 같이 clone한 Theme 이름으로 편집을 해줘야 연결이 됩니다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Extensions</span><br><span class="line">## Plugins: https://hexo.io/plugins/</span><br><span class="line">## Themes: https://hexo.io/themes/</span><br><span class="line">theme: fact</span><br></pre></td></tr></table></figure></p>
 <h3 id="3-Theme-Config파일을-수정을-통해서-커스텀마이징"><a href="#3-Theme-Config파일을-수정을-통해서-커스텀마이징" class="headerlink" title="3. Theme Config파일을 수정을 통해서 커스텀마이징"></a>3. Theme Config파일을 수정을 통해서 커스텀마이징</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">1. fact/_config.yml 수정</span><br><span class="line">use url, not username 항목으로 이동해서 </span><br><span class="line">email, github, twitter, google 리스트에 자신의 정보를 넣어준다.</span><br><span class="line">2. 프로필 사진 변경</span><br><span class="line">fact/source/css/images/avatar.png 에 연결된 이미지가 있습니다. </span><br><span class="line">자신의 프로필사진을 저 파일로 대체를 해도 되고 아니면 검색을 해서 원하는 프로필사진 파일명으로 변경 하면 됩니다.</span><br><span class="line">3. bio.ejs 편집</span><br><span class="line">&quot;&lt;!-- About Me --&gt;&quot; 항목에 &lt;div class=&quot;info&quot;&gt; 아래에 </span><br><span class="line">href을 자신의 github나 자신의 블로그로 연결 해 줍니다.</span><br></pre></td></tr></table></figure>
 <h3 id="4-Server에-수정된-파일-반영"><a href="#4-Server에-수정된-파일-반영" class="headerlink" title="4. Server에 수정된 파일 반영"></a>4. Server에 수정된 파일 반영</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo deploy --generate</span><br></pre></td></tr></table></figure>
 <h3 id="변경된-theme"><a href="#변경된-theme" class="headerlink" title="변경된 theme"></a>변경된 theme</h3><p><img src="/css/images/hexo_fact_theme.png" alt="hexo_fact_theme"></p>
 
-      
-    </div>
+            
 
-
-    <section class="article-block-meta">
-      
-        <div class="article-tags">
-          <span class="icon icon-tag"></span>
-          <span class="text">
-            <a class="tag-link" href="/tags/Github/">Github</a>, <a class="tag-link" href="/tags/Hexo/">Hexo</a>, <a class="tag-link" href="/tags/Ubuntu/">Ubuntu</a>, <a class="tag-link" href="/tags/fact/">fact</a>, <a class="tag-link" href="/tags/theme/">theme</a>
-          </span>
         </div>
-      
-      <div class="article-cc">
-        <span class="icon icon-creative-commons"></span>
-        <span class="text">Contents licensed under Creative Commons <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="external">by-nc-sa 4.0</a>.</span>
-      </div>
-    </section>
+    </div>
+    <div id="post-footer" class="post-footer main-content-wrap">
+        
+            <div class="post-footer-tags">
+                <span class="text-color-light text-small">TAGGED IN</span><br/>
+                
+    <a class="tag tag--primary tag--small t-link" href="/tags/Github/">Github</a> <a class="tag tag--primary tag--small t-link" href="/tags/Hexo/">Hexo</a> <a class="tag tag--primary tag--small t-link" href="/tags/Ubuntu/">Ubuntu</a> <a class="tag tag--primary tag--small t-link" href="/tags/fact/">fact</a> <a class="tag tag--primary tag--small t-link" href="/tags/theme/">theme</a>
 
-    
-    <footer class="article-footer">
-      
-      
-      <div class="article-nav-link">
-          <span class="article-nav-caption">Next article: </span>
-          <a href="/2018/05/26/Hexo-Theme-연결/"
-            id="article-nav-newer" class="article-nav-link-wrap">
-            <span class="article-nav-title">
-              
-                Hexo &#34;tranquilpeak&#34;로 Theme 연결
-              
-            </span>
-          </a>
-      </div>
-      
-    </footer>
-    
+            </div>
+        
+        
+            <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--disabled">
+                
+                    <i class="fa fa-angle-left" aria-hidden="true"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2018/05/26/Hexo-Theme-연결/" data-tooltip="Hexo &#34;tranquilpeak&#34;로 Theme 연결" aria-label="NEXT: Hexo &#34;tranquilpeak&#34;로 Theme 연결">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action hide-lg hide-md hide-sm">
+            <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="Share this post">
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </a>
+        </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://byungjiklim.github.io/2018/05/27/Hexo-theme-fact로-변경-및-설정/" title="Share on Facebook">
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://byungjiklim.github.io/2018/05/27/Hexo-theme-fact로-변경-및-설정/" title="Share on Twitter">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://byungjiklim.github.io/2018/05/27/Hexo-theme-fact로-변경-및-설정/" title="Share on Google+">
+                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+        
+            
+        
+        <li class="post-action">
+            
+                <a class="post-action-btn btn btn--default" href="#" aria-label="Back to top">
+            
+                <i class="fa fa-list" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</div>
 
-  </div>
+
+        
+        
+            
+        
+    </div>
 </article>
 
 
 
-        <script>document.getElementById("loading-bar").style.width="60%";</script>
-      </div>
-    </main>
-    
-
-<div class="search">
-  <form name="searchform" id="searchform">
-    <input type="text" id="search_input" class="search_input st-default-search-input"
-      data-list-highlight="true" data-list-value-completion="true" placeholder="Type some search text" />
-    <button type="submit" class="search-bar-trigger">
-      <span class="icon icon-search"></span>
-    </button>
-  </form>
-</div>
-
-
-<footer id="footer" class="clearfix">
-  <div class="right">&copy; <a href="">Carpe diem</a> Theme by <a href="https://github.com/byungjiklim" target="_blank">Lim Byungjik</a>.</div>
-  <div class="left">Powered by <a href="https://hexo.io/" rel="external" target="_blank">Hexo</a>.</div>
+                <footer id="footer" class="main-content-wrap">
+    <span class="copyrights">
+        Copyrights &copy; 2018 byungjikLim. All Rights Reserved.
+    </span>
 </footer>
 
-    <script>document.getElementById("loading-bar").style.width="80%";</script>
-    <div class="overlay"></div>
-  </div>
-  <div class="site-bio">
-
-  <!-- About Me -->
-  <div class="about-me clearfix">
-    <div class="avatar">
-      <img src="/css/images/avatar.png" />
-    </div>
-    <div class="info">
-      <a class="name dark-btn" href="https://github.com/byungjiklim">
-        byungjikLim
-      </a>
-    </div>
-    <div class="info">
-      <span class="item desc">
+            </div>
+            
+                <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+                    <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--disabled">
+                
+                    <i class="fa fa-angle-left" aria-hidden="true"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2018/05/26/Hexo-Theme-연결/" data-tooltip="Hexo &#34;tranquilpeak&#34;로 Theme 연결" aria-label="NEXT: Hexo &#34;tranquilpeak&#34;로 Theme 연결">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action hide-lg hide-md hide-sm">
+            <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="Share this post">
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </a>
+        </li>
         
-      </span>
-    </div>
-  </div>
-
-  <!-- Social Icons -->
-  <div class="social clearfix">
-    
-      
-        <a href="https://h2omit@gmail.com" class="email"
-          target="_blank" rel="external">
-          <span class="icon icon-email"></span>
-        </a>
-      
-        <a href="https://github.com/byungjiklim" class="github"
-          target="_blank" rel="external">
-          <span class="icon icon-github"></span>
-        </a>
-      
-    
-  </div>
-
-  <!-- Home & Bottom -->
-  <div class="shortcuts clearfix">
-    <div class="bk">
-      <a href="#header" class="dark-btn window-nav">
-        <span class="icon icon-chevron-up"></span>
-        <span class="text">Back to Top</span>
-      </a>
-    </div>
-    <div class="bk">
-      <a href="#footer" class="dark-btn window-nav">
-        <span class="icon icon-chevron-down"></span>
-        <span class="text">Go to Bottom</span>
-      </a>
-    </div>
-  </div>
-
+            
+            
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://byungjiklim.github.io/2018/05/27/Hexo-theme-fact로-변경-및-설정/" title="Share on Facebook">
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://byungjiklim.github.io/2018/05/27/Hexo-theme-fact로-변경-및-설정/" title="Share on Twitter">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+            
+            
+            <li class="post-action hide-xs">
+                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://byungjiklim.github.io/2018/05/27/Hexo-theme-fact로-변경-및-설정/" title="Share on Google+">
+                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                </a>
+            </li>
+        
+        
+            
+        
+        <li class="post-action">
+            
+                <a class="post-action-btn btn btn--default" href="#" aria-label="Back to top">
+            
+                <i class="fa fa-list" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
 </div>
 
+
+                </div>
+                <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+    <i id="btn-close-shareoptions" class="fa fa-close"></i>
+    <ul class="share-options">
+        
+            
+            
+            <li class="share-option">
+                <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://byungjiklim.github.io/2018/05/27/Hexo-theme-fact로-변경-및-설정/">
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i><span>Share on Facebook</span>
+                </a>
+            </li>
+        
+            
+            
+            <li class="share-option">
+                <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https://byungjiklim.github.io/2018/05/27/Hexo-theme-fact로-변경-및-설정/">
+                    <i class="fa fa-twitter" aria-hidden="true"></i><span>Share on Twitter</span>
+                </a>
+            </li>
+        
+            
+            
+            <li class="share-option">
+                <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https://byungjiklim.github.io/2018/05/27/Hexo-theme-fact로-변경-및-설정/">
+                    <i class="fa fa-google-plus" aria-hidden="true"></i><span>Share on Google+</span>
+                </a>
+            </li>
+        
+    </ul>
 </div>
 
-  
+            
+        </div>
+        
 
-<script type="text/javascript">
-  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
-  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
-  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
-  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
 
-  _st('install','FHMeAyBdVccJECstf-XJ','2.0.0');
-</script>
+    
 
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<!-- use local jQuery if CDN is down -->
-<script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script>
-<script src="/js/artifact.js"></script>
+<div id="about">
+    <div id="about-card">
+        <div id="about-btn-close">
+            <i class="fa fa-remove"></i>
+        </div>
+        
+            <img id="about-card-picture" src="https://www.gravatar.com/avatar/b6300c8d790fcd04deda629d850670c9?s=110" alt="Author&#39;s picture"/>
+        
+            <h4 id="about-card-name">byungjikLim</h4>
+        
+            <div id="about-card-bio"><p>^<strong><strong><strong><strong><strong>____</strong></strong></strong></strong></strong>^</p>
+</div>
+        
+        
+            <div id="about-card-job">
+                <i class="fa fa-briefcase"></i>
+                <br/>
+                <p>C++ Developer</p>
 
-  <script>document.getElementById("loading-bar").style.width="100%";</script>
-</body>
+            </div>
+        
+        
+    </div>
+</div>
+
+        
+        
+<div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
+        <!--SCRIPTS-->
+<script src="/assets/js/jquery.js"></script>
+<script src="/assets/js/jquery.fancybox.js"></script>
+<script src="/assets/js/thumbs.js"></script>
+<script src="/assets/js/tranquilpeak.js"></script>
+<!--SCRIPTS END-->
+
+    
+
+
+
+    </body>
 </html>
